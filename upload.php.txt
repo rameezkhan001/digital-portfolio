@@ -1,0 +1,16 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $apk_url = $_POST["apk_url"];
+    
+    // Download the APK file
+    $apk_file = file_get_contents($apk_url);
+    
+    // Save the APK file locally
+    $file_name = basename($apk_url);
+    file_put_contents($file_name, $apk_file);
+    
+    echo "APK file downloaded and saved successfully!";
+} else {
+    echo "Invalid request method!";
+}
+?>

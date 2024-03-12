@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote APK Upload</title>
+</head>
+<body>
+    <h2>Upload Remote APK</h2>
+    <form action="upload.php" method="post">
+        <label for="apk_url">APK File URL:</label><br>
+        <input type="text" id="apk_url" name="apk_url" placeholder="Enter APK file URL"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
